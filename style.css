@@ -1,0 +1,106 @@
+body {
+	background: #eee;
+	font: 12px helvetica;
+}
+
+img, embed, object, video {
+	max-width: 100%;
+	display: flex;
+}
+
+hr {
+	border: 2px solid;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+/* Start styling for header area */
+header .container {
+	max-width: 100%;
+	display: flex;
+}
+
+header .leftside {
+	width: 30%;
+	float: left;
+}
+
+header .rightside {
+	width: 90%;
+	text-align: right;
+	float: right;
+}
+
+header .rightside .name {
+	text-transform: uppercase;
+	font-size: 35px;
+}
+
+header .rightside .career {
+	font-size: 20px;
+}
+
+header .logo {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+}
+
+main .mainpic {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+h2.heading {
+text-transform: uppercase;
+font-size: 25px;
+text-align: center;
+margin: 5px;
+}
+
+/* Start styling for portfolio items */
+main .items {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+main .items .project {
+	width: 32%;
+	height: 100%;
+	margin: 2px;
+	font-size: 18px;
+	text-align: center;
+}
+
+main .items .project_text {
+	margin: 15px;
+	font-size: 15px;
+	text-align: justify;
+}
+
+article img {
+	height: auto;
+}
+
+footer {
+	font-size: 15px;
+	font-weight: bold;
+	text-align: right;
+	margin-right: 2%;
+}
+
+/* Media queries and styling for smaller screen sizes */
+@media screen and (min-width: 600px) and (max-width: 850px)	{
+	main .items .project {
+		width: 49%;
+	}
+}
+
+@media screen and (max-width: 599px)	{
+	main .items .project {
+		width: 100%;
+	}
+}
